@@ -1,0 +1,476 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --manulife-green: #00a859;
+  --manulife-green-dark: #007a41;
+  --manulife-green-light: #e6f6ed;
+  --bg-light: #f0f4f8;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  color: var(--text-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ant-typography {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.app-layout {
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+/* Glassmorphism Header */
+.app-header {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  padding: 0 50px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+}
+
+.logo-text {
+  color: var(--manulife-green) !important;
+  margin: 0 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.5px;
+}
+
+/* Modern Hero Banner with Glow Effects */
+.hero-banner {
+  position: relative;
+  background: linear-gradient(135deg, #004225 0%, var(--manulife-green) 100%);
+  color: white;
+  padding: 100px 50px 140px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Hiệu ứng ánh sáng nền */
+.hero-banner::before,
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.hero-banner::before {
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-banner::after {
+  bottom: -100px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(200, 255, 200, 0.2);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner h1 {
+  color: white !important;
+  font-size: 42px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Floating Card Layout */
+.main-content {
+  padding: 0 50px 50px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.content-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.content-header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Nút bấm (Button) Wow */
+.btn-manulife {
+  background: linear-gradient(
+    135deg,
+    var(--manulife-green) 0%,
+    var(--manulife-green-dark) 100%
+  ) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 0 20px !important;
+  height: 38px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 14px rgba(0, 168, 89, 0.2) !important;
+}
+
+.btn-manulife:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 168, 89, 0.35) !important;
+  background: linear-gradient(
+    135deg,
+    #00b962 0%,
+    var(--manulife-green) 100%
+  ) !important;
+}
+
+/* Tùy chỉnh Table mượt mà hơn */
+.ant-table-wrapper {
+  background: transparent !important;
+}
+
+.ant-table {
+  background: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--bg-light) !important;
+  color: var(--text-muted) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-bottom: none !important;
+  padding: 16px 24px !important;
+}
+
+.ant-table-thead > tr > th:first-child {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+}
+
+.ant-table-thead > tr > th:last-child {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 20px 24px !important;
+  border-bottom: 1px solid #f0f4f8 !important;
+  transition: background-color 0.3s ease;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: var(--manulife-green-light) !important;
+}
+
+/* Custom Tag */
+.ant-tag {
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+.ant-tag-success {
+  background-color: var(--manulife-green-light) !important;
+  color: var(--manulife-green-dark) !important;
+}
+
+/* Tùy chỉnh Modal */
+.job-modal .ant-modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  padding: 24px !important;
+}
+
+.job-modal .ant-modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+}
+
+.job-modal .modal-title {
+  color: var(--text-main);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.job-modal .ant-modal-close {
+  top: 24px;
+  inset-inline-end: 24px;
+}
+
+.benefit-item {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.job-detail-box {
+  background: var(--bg-light);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.job-info-bar {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.icon-green {
+  color: var(--manulife-green);
+  font-size: 18px;
+}
+
+/* ==================================================== */
+/* THEMED PAGINATION OVERRIDES */
+/* ==================================================== */
+
+/* Container Space */
+.ant-table-pagination.ant-pagination {
+  margin: 32px 0 0 0 !important;
+  gap: 6px;
+}
+
+/* Individual Page Numbers */
+.ant-pagination .ant-pagination-item {
+  border-radius: 8px !important;
+  border: 1px solid #e2e8f0 !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+  color: var(--text-main) !important;
+  font-weight: 600 !important;
+}
+
+/* Normal Item Hover State */
+.ant-pagination .ant-pagination-item:not(.ant-pagination-item-active):hover {
+  border-color: var(--manulife-green) !important;
+  background-color: var(--manulife-green-light) !important;
+}
+
+.ant-pagination .ant-pagination-item:not(.ant-pagination-item-active):hover a {
+  color: var(--manulife-green-dark) !important;
+}
+
+/* Active Page State */
+.ant-pagination .ant-pagination-item-active {
+  background: linear-gradient(
+    135deg,
+    var(--manulife-green) 0%,
+    var(--manulife-green-dark) 100%
+  ) !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 168, 89, 0.2) !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #ffffff !important;
+}
+
+/* Previous & Next Arrow Boxes */
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+  border-radius: 8px !important;
+  border: 1px solid #e2e8f0 !important;
+  background-color: #ffffff !important;
+  color: var(--text-main) !important;
+  transition: all 0.3s ease !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arrow Boxes Hover State */
+.ant-pagination
+  .ant-pagination-prev:not(.ant-pagination-disabled):hover
+  .ant-pagination-item-link,
+.ant-pagination
+  .ant-pagination-next:not(.ant-pagination-disabled):hover
+  .ant-pagination-item-link {
+  border-color: var(--manulife-green) !important;
+  background-color: var(--manulife-green-light) !important;
+  color: var(--manulife-green-dark) !important;
+}
+
+/* Disabled Arrows (First / Last pages) */
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+  border-color: #f1f5f9 !important;
+  background-color: #f8fafc !important;
+  color: #cbd5e1 !important;
+}
+
+/* Jump ellipses (...) box configuration */
+.ant-pagination
+  .ant-pagination-jump-prev
+  .ant-pagination-item-container
+  .ant-pagination-item-ellipsis,
+.ant-pagination
+  .ant-pagination-jump-next
+  .ant-pagination-item-container
+  .ant-pagination-item-ellipsis {
+  color: var(--text-muted) !important;
+}
+
+/* ==================================================== */
+/* RESPONSIVE DESIGN (Tablets and Mobile) */
+/* ==================================================== */
+
+@media screen and (max-width: 768px) {
+  /* Adjust Header */
+  .app-header {
+    padding: 0 20px !important;
+  }
+
+  .logo-text {
+    font-size: 20px !important;
+  }
+
+  /* Adjust Hero Banner */
+  .hero-banner {
+    padding: 60px 20px 100px;
+  }
+
+  .hero-banner h1 {
+    font-size: 28px !important;
+  }
+
+  .hero-banner p {
+    font-size: 15px;
+  }
+
+  /* Adjust Main Content & Card */
+  .main-content {
+    padding: 0 16px 30px;
+    margin-top: -60px;
+  }
+
+  .content-card {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* Adjust Table Cells */
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 16px 12px !important;
+  }
+
+  /* Adjust Modals for Mobile */
+  .job-modal .ant-modal-content {
+    padding: 16px;
+  }
+
+  .job-modal .modal-title {
+    font-size: 20px;
+  }
+}
+
+/* ==================================================== */
+/* RESPONSIVE MODAL ADJUSTMENTS */
+/* ==================================================== */
+
+@media screen and (max-width: 576px) {
+  /* Reduce padding inside the modal for small screens */
+  .job-modal .ant-modal-content {
+    padding: 16px !important;
+  }
+
+  .job-modal .ant-modal-header {
+    margin-bottom: 16px;
+  }
+
+  .job-modal .modal-title {
+    font-size: 18px !important;
+    line-height: 1.4;
+  }
+
+  /* Make info bar items take full width when stacked */
+  .job-info-bar {
+    padding: 12px;
+    gap: 8px !important;
+  }
+
+  .job-detail-box {
+    padding: 12px;
+  }
+
+  /* Adjust Modal Footer Buttons for mobile */
+  .job-modal .ant-modal-footer {
+    display: flex;
+    flex-direction: column-reverse; /* Stack Apply button on top of Close */
+    gap: 8px;
+  }
+
+  .job-modal .ant-modal-footer .ant-btn {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  /* Application Contact Modal adjustments */
+  .ant-modal-centered .ant-modal {
+    max-width: calc(100vw - 20px);
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Smaller font for very narrow phones */
+  .benefit-item,
+  .ant-list-item .ant-typography {
+    font-size: 14px !important;
+  }
+}

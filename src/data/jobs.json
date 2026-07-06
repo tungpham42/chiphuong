@@ -1,0 +1,45 @@
+[
+  {
+    "id": "JD001",
+    "title": "Chuyên viên hoạch định tài chính ",
+    "department": "Kinh doanh",
+    "location": "Mclass Saigon - Phường Sài Gòn, TP.HCM ",
+    "type": "Linh hoạt ",
+    "description": "Tìm kiếm, xây dựng và duy trì mối quan hệ với khách hàng. Tư vấn và thiết kế giải pháp tài chính – bảo hiểm: Bảo vệ, Tích lũy, Đầu tư, Chăm sóc sức khỏe, Quỹ học vấn, Hưu trí. Chăm sóc, hỗ trợ khách hàng hiện hữu  và tham gia đầy đủ các chương trình đào tạo của công ty.",
+    "requirements": [
+      "Độ tuổi: Từ 25 – 45 tuổi ",
+      "Tốt nghiệp Cao Đẳng/ Đại Học ",
+      "Thành thạo các kỹ năng tin học văn phòng ",
+      "Có kiến thức về tài chính, bán hàng, sức khoẻ, y tế là một lợi thế "
+    ],
+    "benefits": [
+      "Đảm bảo thu nhập tối thiểu 15 triệu/ tháng ",
+      "Hỗ trợ kinh doanh khi tư vấn tài chính cá nhân từ 8 triệu đến 20 triệu/tháng ",
+      "Lộ trình thăng tiến rõ ràng, xét định kỳ 6 tháng 1 lần theo năng lực ",
+      "Được công ty đào tạo kiến thức và kỹ năng tại học viện MBA, Limra Hoa Kỳ ",
+      "Được trang bị các công cụ số để hỗ trợ công việc tư vấn và quản lý "
+    ]
+  },
+  {
+    "id": "JD002",
+    "title": "Quản lý kinh doanh ",
+    "department": "Quản lý / Kinh doanh",
+    "location": "Mclass Saigon - Phường Sài Gòn, TP.HCM ",
+    "type": "Linh hoạt ",
+    "description": "Phát triển hệ thống khách hàng, đối tác & mở rộng thị trường. Quản lý, đào tạo & phát triển đội ngũ kinh doanh. Xây dựng & triển khai chiến lược kinh doanh bảo hiểm. Đảm bảo doanh số & chỉ tiêu kinh doanh.",
+    "requirements": [
+      "Độ tuổi: Từ 25 – 45 tuổi ",
+      "Tốt nghiệp Cao Đẳng/ Đại Học ",
+      "Kinh nghiệm ngành bảo hiểm (ưu tiên quản lý) ",
+      "Kỹ năng lãnh đạo, xây dựng & phát triển đội nhóm ",
+      "Tư duy chiến lược, phân tích thị trường, đề xuất giải pháp "
+    ],
+    "benefits": [
+      "Thu nhập hấp dẫn: Lương cứng + Hoa hồng + Thưởng KPI (25 triệu ++ ) ",
+      "Lộ trình thăng tiến rõ ràng, xét định kỳ 6 tháng 1 lần theo năng lực ",
+      "Được làm việc tại môi trường văn phòng hiện đại tiêu chuẩn 5 sao tại trung tâm tài chính ",
+      "Các chương trình Du lịch trong và ngoài nước hàng năm ",
+      "Cơ hội mở rộng mạng lưới với chuyên gia hàng đầu "
+    ]
+  }
+]
