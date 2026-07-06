@@ -217,6 +217,9 @@ h6,
 }
 
 /* Tùy chỉnh Modal */
+.job-modal .ant-modal {
+  margin: 50px 0 !important;
+}
 .job-modal .ant-modal-content {
   border-radius: 20px;
   overflow: hidden;
