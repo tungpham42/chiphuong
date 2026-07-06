@@ -474,3 +474,12 @@ h6,
     font-size: 14px !important;
   }
 }
+/* Add to your main CSS */
+.admin-content {
+  padding: 50px;
+}
+@media screen and (max-width: 768px) {
+  .admin-content {
+    padding: 20px 16px !important;
+  }
+}

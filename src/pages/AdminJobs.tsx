@@ -159,7 +159,7 @@ const AdminJobs: React.FC = () => {
         </Button>
       </Header>
 
-      <Content style={{ padding: "50px" }}>
+      <Content className="admin-content">
         <div style={{ background: "white", padding: 24, borderRadius: 8 }}>
           <div
             style={{
@@ -186,6 +186,7 @@ const AdminJobs: React.FC = () => {
             dataSource={jobs}
             rowKey="id"
             loading={loading}
+            scroll={{ x: 600 }} // Enables horizontal scrolling on small screens
           />
         </div>
       </Content>
