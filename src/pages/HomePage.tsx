@@ -335,6 +335,7 @@ const HomePage: React.FC = () => {
       </Modal>
 
       {/* Modal Thông tin liên hệ ứng tuyển */}
+      {/* Modal Thông tin liên hệ ứng tuyển */}
       <Modal
         title={
           <span style={{ fontSize: "20px", fontWeight: 800, color: "#1e293b" }}>
@@ -354,7 +355,8 @@ const HomePage: React.FC = () => {
           <Button
             key="email"
             className="btn-manulife"
-            href="mailto:phuong_ob708@manulife.com.vn"
+            // Thay đổi href tại đây để tự động điền Subject
+            href={`mailto:phuong_ob708@manulife.com.vn?subject=Ứng+tuyển+vị+trí+${encodeURIComponent(selectedJob?.title || "")}`}
           >
             Gửi Email Ngay
           </Button>,
